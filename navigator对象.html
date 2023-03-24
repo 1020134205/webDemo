@@ -1,0 +1,23 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <script>
+        // 检测是否为移动端
+        !(function(){
+            const userAgent=navigator.userAgent
+            // 检验是否为Android 或iPhone
+            const android=userAgent.match(/(Android);?[\s\/]+([\d.]+)?/)
+            const iphone=userAgent.match(/(iPhone\sOS)\s([\d_]+)/)
+            if(android || iphone){
+                location.href='http://m.itcast.cn'//需要跳转的网址
+            }
+        })()
+    </script>
+</head>
+<body>
+    
+</body>
+</html>
